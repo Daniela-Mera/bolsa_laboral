@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @oportunidad %>
+
+<div>
+  <%= link_to "Edit this oportunidad", edit_oportunidad_path(@oportunidad) %> |
+  <%= link_to "Back to oportunidads", oportunidads_path %>
+
+  <%= button_to "Destroy this oportunidad", @oportunidad, method: :delete %>
+</div>

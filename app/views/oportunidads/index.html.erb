@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Oportunidads</h1>
+
+<div id="oportunidads">
+  <% @oportunidads.each do |oportunidad| %>
+    <%= render oportunidad %>
+    <p>
+      <%= link_to "Show this oportunidad", oportunidad %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New oportunidad", new_oportunidad_path %>

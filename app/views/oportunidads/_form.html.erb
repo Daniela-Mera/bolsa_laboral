@@ -1,0 +1,17 @@
+<%= form_with(model: oportunidad) do |form| %>
+  <% if oportunidad.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(oportunidad.errors.count, "error") %> prohibited this oportunidad from being saved:</h2>
+
+      <ul>
+        <% oportunidad.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
